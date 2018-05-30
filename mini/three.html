@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>web navigation with html snippets</title>
+    <meta name="description" content="a website setup to show off how to create a multipage website using an html-include for navigation">
+    <!-- this loads the external styles -->
+    <link rel="stylesheet" href="main.css">
+    <!-- this loads the javascript needed to use the html-include content -->
+    <script src="navigation.js"></script>
+	<link rel="shortcut icon" href="favicon(1).ico" />
+</head>
+
+<body>
+    <!-- this is the snippet you use to load the navigation from a separate html file -->
+    <nav w3-include-html="navigation.html"></nav>
+
+    <section>
+        <h1>This is the transition page</h1>
+        <div id="change1"><p>Transition demo</p></div>
+		
+		<p id="change2">He stretch.</p>
+		
+		<p id="change3">He flip.</p>
+		
+		<p id="change4">He skew.</p>
+    </section>
+
+    <!-- this bit of code is needed at the end of your body section to load the html-include content -->
+    <script>
+        includeHTML();
+
+    </script>
+</body>
+
+</html>

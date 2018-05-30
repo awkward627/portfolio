@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>web navigation with html snippets</title>
+    <meta name="description" content="a website setup to show off how to create a multipage website using an html-include for navigation">
+    <!-- this loads the external styles -->
+    <link rel="stylesheet" href="main.css">
+    <!-- this loads the javascript needed to use the html-include content -->
+    <script src="navigation.js"></script>
+	<link rel="shortcut icon" href="favicon(1).ico" />
+</head>
+
+<body>
+    <!-- this is the snippet you use to load the navigation from a separate html file -->
+    <nav w3-include-html="navigation.html"></nav>
+
+    <section>
+        <h1>Here is a color list</h1>
+         <table>
+  <tr>
+    <th>Color Name</th>
+    <th>Color Family</th>
+    <th>Color Number</th>
+  </tr>
+  <tr id="turq">
+    <td>Midnight Green</td>
+    <td>Turquoise</td>
+    <td>#114B5F</td>
+  </tr>
+  <tr id="blue">
+    <td>Queen Blue</td>
+    <td>Blue</td>
+    <td>#456990</td>
+  </tr>
+	<tr id="gree">
+    <td>Nyanza</td>
+    <td>Green</td>
+    <td>#E4FDE1</td>
+  </tr>
+	<tr id="pink">
+    <td>Fiery Rose</td>
+    <td>Pink</td>
+    <td>#F45B69</td>
+  </tr>
+	<tr id="red">
+    <td>Wine</td>
+    <td>Red</td>
+    <td>#6B2737</td>
+  </tr>
+</table> 
+    </section>
+
+    <!-- this bit of code is needed at the end of your body section to load the html-include content -->
+    <script>
+        includeHTML();
+
+    </script>
+</body>
+
+</html>

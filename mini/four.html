@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>web navigation with html snippets</title>
+    <meta name="description" content="a website setup to show off how to create a multipage website using an html-include for navigation">
+    <!-- this loads the external styles -->
+    <link rel="stylesheet" href="main.css">
+    <!-- this loads the javascript needed to use the html-include content -->
+    <script src="navigation.js"></script>
+	<link rel="shortcut icon" href="favicon(1).ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- this is the snippet you use to load the navigation from a separate html file -->
+    <nav w3-include-html="navigation.html"></nav>
+
+    <section>
+        <h1 id="change5">This is my second collor pallete option</h1>
+		<table>
+  <tr>
+    <th>Color Name</th>
+    <th>Color Family</th>
+    <th>Color Number</th>
+  </tr>
+  <tr id="purp">
+    <td>Deep Koamaru</td>
+    <td>Purple</td>
+    <td>#3D315B</td>
+  </tr>
+  <tr id="blu">
+    <td>Independence</td>
+    <td>Blue</td>
+    <td>#444B6E</td>
+  </tr>
+	<tr id="gre">
+    <td>Xanadu</td>
+    <td>Green</td>
+    <td>#708B75</td>
+  </tr>
+	<tr id="gre2">
+    <td>Olivine</td>
+    <td>Green</td>
+    <td>#9AB87A</td>
+  </tr>
+	<tr id="gre3">
+    <td>Pastel Yellow</td>
+    <td>Green</td>
+    <td>#F8F991</td>
+  </tr>
+</table>
+		<p><i class="fa fa-spinner"></i></p>
+    </section>
+
+    <!-- this bit of code is needed at the end of your body section to load the html-include content -->
+    <script>
+        includeHTML();
+
+    </script>
+</body>
+
+</html>

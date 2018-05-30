@@ -1,0 +1,221 @@
+/* this is an external stylesheet. the advantage here is that you can change stuff in one place and it updates across the site */
+
+nav ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6B2737;}
+
+nav li {float: left;}
+
+nav li a {display: block;
+    color: #E4FDE1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {background-color: #F45B69;}
+
+body {background-color: #456990;}
+
+section {color: #E4FDE1;}
+
+table {width: 80%;
+	background: #F45B69;
+	border: 5px solid #6B2737;
+	padding: 5px;
+	border-collapse: collapse;}
+
+td {text-align: center;}
+
+th {background: #6B2737;}
+
+td, th {padding: 5px;
+	border: 3px solid #6B2737;}
+
+#turq:hover {background: #114B5F;}
+
+#blue:hover {background: #456990;
+	color: #F45B69;}
+
+#gree:hover {background: #E4FDE1;
+	color: #6B2737;}
+
+#pink:hover {background: #F45B69;
+	color: #114B5F;}
+
+#red:hover {background: #6B2737;
+	color: #456990;}
+
+#purp:hover {background: #3D315B;
+	color: #708B75;}
+
+#blu:hover {background: #444B6E;
+	color: #9AB87A;}
+
+#gre:hover {background: #708B75;
+	color: #F8F991;}
+
+#gre2:hover {background: #9AB87A;
+	color: #3D315B;}
+
+#gre3:hover {background: #F8F991;
+	color: #444B6E;}
+
+#change1 {width:125px;
+	height:50px;
+	background: #F45B69;
+	border: 2px solid #6B2737;
+	transition: width 2s ease-in-out, border 2s ease-in-out, background 2s ease-in-out;}
+
+#change2 {font-size: 20px;
+	letter-spacing: 1px;
+	transition: letter-spacing 2s ease-in-out;}
+
+#change3 {font-size: 20px;
+	width: 100px;
+	letter-spacing: 1px;
+	transition: transform 2s ease-in-out;}
+
+#change4 {font-size: 20px;
+	width: 100px;
+	letter-spacing: 1px;
+	transition: transform 2s ease-in-out;}
+
+#change5 {transition: transform 6s ease-in-out;}
+
+#change1:hover {width:200px;
+	border:4px solid #F45B69;
+	background: #6B2737;}
+
+#change2:hover {letter-spacing: 50px;}
+
+#change3:hover {transform: rotate(180deg);}
+
+#change4:hover {transform: skewX(-45deg);}
+
+#change5:hover {transform: translate(1000px, -1000px);}
+
+p .fa-moon-o {font-size: 75px;
+	transition: 2s ease-in-out;}
+
+p .fa-moon-o:hover {text-shadow: 3px 3px 0 #000;
+	color: #114B5F;}
+
+p .fa-cube {font-size: 75px;
+	color: #000;
+	transition: 2s ease-in-out;}
+
+p .fa-cube:hover {text-shadow: 3px 3px #000;
+	color: #FBFBFB}
+
+p .fa-flash {font-size: 30px;
+	color: #FBFBFB;
+	background: #777;
+	padding: 10px;
+	border-radius: 50%;
+	width: 30px;
+	text-align: center;
+	transition: 2s ease-in-out;}
+
+p .fa-flash:hover {background: #000;}
+
+p .fa-paper-plane-o {font-size: 50px;
+	color: #000000;
+	transition: transform 6s ease-in-out;}
+
+p .fa-paper-plane-o:hover {transform: translate(1000px, -1000px);}
+
+p .fa-spinner {font-size: 50px;
+	color: #6B2737;
+	transition: 2s ease-in-out;}
+
+p .fa-spinner:hover {color: #E4FDE1;}
+
+/* The animation code */
+@keyframes example {
+    0%   {background-color:#6B2737; left:0px; top:0px;}
+    25%  {background-color:#114B5F; left:200px; top:0px;}
+    50%  {background-color:#F45B69; left:200px; top:200px;}
+    75%  {background-color:#E4FDE1; left:0px; top:200px;}
+    100% {background-color:#6B2737; left:0px; top:0px;}}
+
+/* The element to apply the animation to */
+#animate1 {
+    width: 100px;
+    height: 100px;
+	position: relative;
+    background-color: #6B2737;
+    animation-name: example;
+    animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;}
+
+@keyframes asterisk {
+    0%   {color:#F45B69; left:0px; top:0px;}
+    25%  {color:#E4FDE1; left:200px; top:0px;}
+    50%  {color:#6B2737; left:200px; top:200px;}
+    75%  {color:#114B5F; left:0px; top:200px;}
+    100% {color:#F45B69; left:0px; top:0px;}}
+
+p .fa-asterisk {
+    font-size: 50px;
+	position: relative;
+    color: #F45B69;
+    animation-name: asterisk;
+    animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;}
+
+@keyframes barcode {
+    0%   {color:black; left:0px; top:0px;}
+    25%  {color:white; left:200px; top:0px;}
+    50%  {color:black; left:200px; top:200px;}
+    75%  {color:white; left:0px; top:200px;}
+    100% {color:black; left:0px; top:0px;}}
+
+p .fa-barcode {
+    font-size: 50px;
+	position: relative;
+    color: black;
+    animation-name: barcode;
+    animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: ease-in-out;}
+
+@keyframes fontalicious {
+	0% {font-family: helvetica;}
+	10% {font-family: times;}
+	20% {font-family: fantasy;}
+	30% {font-family: monospace;}
+	40% {font-family: Palatino;}
+	50% {font-family: Tahoma;}
+	60% {font-family: impact;}
+	70% {font-family: cursive;}
+	80% {font-family: monospace;}
+	90% {font-family: fantasy;}
+	99% {font-family: futura;}
+	100% {}}
+
+.fontalicious {
+	animation-name: fontalicious;
+	animation-delay: 1s;
+	animation-iteration-count: 4;
+	animation-duration: 1s;}
+
+@media print {
+	h1, h2, h3{text-align: center;
+		color: black;}
+	p{margin-left: 1in;
+		max-width: 5in;
+		color: black;
+		line-height: 25px;}
+	p .fa{display: none;}
+	nav{display:none;}}

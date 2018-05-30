@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>web navigation with html snippets</title>
+    <meta name="description" content="a website setup to show off how to create a multipage website using an html-include for navigation">
+    <!-- this loads the external styles -->
+    <link rel="stylesheet" href="main.css">
+    <!-- this loads the javascript needed to use the html-include content -->
+    <script src="navigation.js"></script>
+	<link rel="shortcut icon" href="favicon(1).ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- this is the snippet you use to load the navigation from a separate html file -->
+    <nav w3-include-html="navigation.html"></nav>
+
+    <section>
+        <h1>This is the animation page</h1>
+		<div id="animate1"></div>
+		<p><i class="fa fa-asterisk"></i></p>
+		<p><i class="fa fa-barcode"></i></p>
+    </section>
+
+    <!-- this bit of code is needed at the end of your body section to load the html-include content -->
+    <script>
+        includeHTML();
+
+    </script>
+</body>
+
+</html>

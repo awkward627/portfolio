@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>web navigation with html snippets</title>
+    <meta name="description" content="a website setup to show off how to create a multipage website using an html-include for navigation">
+    <!-- this loads the external styles -->
+    <link rel="stylesheet" href="main.css">
+    <!-- this loads the javascript needed to use the html-include content -->
+    <script src="navigation.js"></script>
+	<link rel="shortcut icon" href="favicon(1).ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/path/to/obnoxious.css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- this is the snippet you use to load the navigation from a separate html file -->
+    <nav w3-include-html="navigation.html"></nav>
+
+    <section>
+        <h1 class="fontalicious">Welcome to the Home page</h1>
+		<p><i class="fa fa-moon-o"></i></p>
+		<p><i class="fa fa-cube"></i></p>
+		<p><i class="fa fa-flash"></i></p>
+		<p><i class="fa fa-paper-plane-o"></i></p>
+		
+<h1>Some Bob Ross:</h1>
+		
+<p>There's nothing wrong with having a tree as a friend. Only God can make a tree - but you can paint one. Let all these things just sort of happen. Maybe there's a happy little Evergreen that lives here.</p>
+
+<p>All you need to paint is a few tools, a little instruction, and a vision in your mind. This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Use absolutely no pressure. Just like an angel's wing. Nice little clouds playing around in the sky. I want everbody to be happy. That's what it's all about.</p>
+
+<p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. We have no limits to our world. We're only limited by our imagination. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. But they're very easily killed. Clouds are delicate. We don't make mistakes we just have happy little accidents.</p>
+
+<p>You don't want to kill all your dark areas they are very important. You can do it. Anyone can paint. There is immense joy in just watching - watching all the little creatures in nature. These things happen automatically. All you have to do is just let them happen.</p>
+
+<p>Put it in, leave it alone. You can do anything here. So don't worry about it. I guess that would be considered a UFO. A big cotton ball in the sky. This is your world, whatever makes you happy you can put in it. Go crazy. Didn't you know you had that much power? You can move mountains. You can do anything.</p>
+
+<p>Son of a gun. It's beautiful - and we haven't even done anything to it yet. Of course he's a happy little stone, cause we don't have any other kind. Let's make a happy little mountain now.</p>
+
+<p>This is probably the greatest thing that's ever happened in my life. It's cold, but it's beautiful. It's almost like something out of a fairytale book. Anything you want to do you can do here. Look around, look at what we have. Beauty is everywhere, you only have to look to see it.</p>
+    </section>
+
+    <!-- this bit of code is needed at the end of your body section to load the html-include content -->
+    <script>
+        includeHTML();
+
+    </script>
+</body>
+
+</html>
